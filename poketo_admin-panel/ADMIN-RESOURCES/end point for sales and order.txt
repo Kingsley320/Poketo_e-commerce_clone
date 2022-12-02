@@ -1,0 +1,33 @@
+NOTE
+1. Date accepts only  numbers so send a timestamp;
+2. unit_price,total_price,quantity accepts only numbers 
+
+GET ip/sales
+get all sales;
+
+POST ip/create/sales
+{"product_id":"","date":"","unit_price":"","total_price":"","quantity":"","user_id":""};
+
+PUT ip/update/sales/:sales_id e.g 6f09846ec70b4507b5da4e961d812b90
+{"product_id":"","date":"","unit_price":"","total_price":"","quantity":"","user_id":""};
+
+DELETE ip/sales/:sales_id e.g 6f09846ec70b4507b5da4e961d812b90;
+
+GET ip/sales/:sales_id e.g 6f09846ec70b4507b5da4e961d812b90;
+
+GET ip/orders
+get all orders;
+
+POST ip/create/order
+{"product_id":"","date":"","unit_price":"","total_price":"","quantity":"","user_id":""}
+
+PUT ip/update/order/:order_id e.g 6f09846ec70b4507b5da4e961d812b90
+{"product_id":"","date":"","unit_price":"","total_price":"","quantity":"","user_id":""}
+
+DELETE ip/order/:order_id e.g 6f09846ec70b4507b5da4e961d812b90
+
+GET ip/order/:order_id e.g 6f09846ec70b4507b5da4e961d812b90
+
+
+
+

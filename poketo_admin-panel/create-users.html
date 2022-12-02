@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hone Admin</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <h2>Poketo Admin</h2>
+        <div class="search">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="icons">
+            XX XX XX
+        </div>
+        <div class="account">
+            My Account &#8595;
+        </div>
+    </div>
+
+    <div class="home">
+        <div class="nav-menu">
+            <div class="user">
+                <img src="img/Screenshot (51).png" alt="green">
+                <div class="info">
+                    Victoria Baker <br>
+                    <small>Santa Ana, CA</small>
+                </div>
+            </div>
+
+            <div class="menu-links">
+                <ul>
+                    <li><a href="index.html">DASHBOARD</a><span>&#62;</span></li>
+                    <li><a href="all-users.html">ALL USERS</a><span>&#62;</span></li>
+                    <li><a href="create-users.html">CREATE USERS</a><span>&#62;</span></li>
+                    <li><a href="all-products.html">ALL PRODUCTS</a><span>&#62;</span></li>
+                    <li><a href="create-products.html">CREATE PRODUCTS</a><span>&#62;</span></li>
+                    <li><a href="all-orders.html">All ORDERS</a><span>&#62;</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="create-users-content">
+            <div class="details">
+                <h4>Add New Users</h4>
+                <form class="form-content">
+                    <div class="row1">
+                        <input type="text" placeholder="Name" name="name" class="name" id="name">
+                        <input type="email" placeholder="Email" name="email" class="email" id="email">
+                    </div>
+                    <div class="row2">
+                        <input type="number" placeholder="Phone Number" name="number" class="number" id="phone">
+                        <input type="password" placeholder="Password" name="password" class="password" id="password">
+                    </div>
+                    <button type="button" id="regUserBtn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/users.js"></script>
+</body>
+</html>

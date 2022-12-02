@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hone Admin</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <h2>Poketo Admin</h2>
+        <div class="search">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="icons">
+            XX XX XX
+        </div>
+        <div class="account">
+            My Account &#8595;
+        </div>
+    </div>
+
+    <div class="home">
+        <div class="nav-menu">
+            <div class="user">
+                <img src="img/Screenshot (51).png" alt="green">
+                <div class="info">
+                    Victoria Baker <br>
+                    <small>Santa Ana, CA</small>
+                </div>
+            </div>
+
+            <div class="menu-links">
+                <ul>
+                    <li><a href="index.html">DASHBOARD</a><span>&#62;</span></li>
+                    <li><a href="all-users.html">ALL USERS</a><span>&#62;</span></li>
+                    <li><a href="create-users.html">CREATE USERS</a><span>&#62;</span></li>
+                    <li><a href="all-products.html">ALL PRODUCTS</a><span>&#62;</span></li>
+                    <li><a href="create-products.html">CREATE PRODUCTS</a><span>&#62;</span></li>
+                    <li><a href="all-orders.html">All ORDERS</a><span>&#62;</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="create-users-content">
+            <div class="details">
+                <h4>Create Product</h4>
+                <form class="form-content" method="post" action="http://159.65.21.42:9000/create/product" enctype="multipart/form-data">
+                    <div class="row1">
+                        <input type="text" placeholder="Name" name="name" class="name">
+                        <input type="text" placeholder="Description" name="description" class="description">
+                    </div>
+                    <div class="row2">
+                        <input type="number" placeholder="Price" name="price" class="price">
+                        <input type="number" placeholder="Quantity" name="quantity" class="quantity">
+                    </div>
+                    <div class="row3">
+                        <!-- <label for="myimage"></label> -->
+                        <input type="file" id="myFile" name="image">
+
+                        <select name="category" id="category">
+                            <option value="">Category</option>
+                            <option value="seyi_slider">Slider</option>
+                            <option value="seyi_section2">Section 2</option>
+                            <option value="seyi_shop">Shop Products</option>
+                            <option value="">Cart</option>
+                        </select>
+                    </div>
+                    <button>SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

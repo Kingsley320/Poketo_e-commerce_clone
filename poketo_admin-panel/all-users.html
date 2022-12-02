@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Admin</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <h2>Poketo Admin</h2>
+        <div class="search">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="icons">
+            XX XX XX
+        </div>
+        <div class="account">
+            My Account &#8595;
+        </div>
+    </div>
+
+    <div class="home">
+        <div class="nav-menu">
+            <div class="user">
+                <img src="img/Screenshot (51).png" alt="green">
+                <div class="info">
+                    Victoria Baker <br>
+                    <small>Santa Ana, CA</small>
+                </div>
+            </div>
+
+            <div class="menu-links">
+                <ul>
+                    <li><a href="index.html">DASHBOARD</a><span>&#62;</span></li>
+                    <li><a href="all-users.html">ALL USERS</a><span>&#62;</span></li>
+                    <li><a href="create-users.html">CREATE USERS</a><span>&#62;</span></li>
+                    <li><a href="all-products.html">ALL PRODUCTS</a><span>&#62;</span></li>
+                    <li><a href="create-products.html">CREATE PRODUCTS</a><span>&#62;</span></li>
+                    <li><a href="all-orders.html">All ORDERS</a><span>&#62;</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="all-users-content">
+            <div class="details">
+                <h4>All Users</h4>
+                <div class="create-users-content" id="updateUserForm">
+                    <form class="updating-form">
+                      <!-- <label for="name">Name</label> -->
+                      <input
+                        type="text"
+                        placeholder="User Name"
+                        name="name"
+                        class="name"
+                        id="name"
+                      />
+                      <!-- <label for="email">Email</label> -->
+                      <input
+                        type="email"
+                        placeholder="User Email"
+                        name="email"
+                        id="email"
+                        class="email"
+                      />
+                      <!-- <label for="number">Phone Number</label> -->
+                      <input
+                        type="number"
+                        name="number"
+                        class="number"
+                        id="phone"
+                        placeholder="User Phone Number"
+                      />
+                      <!-- <label for="password">Password</label> -->
+                      <input
+                        type="password"
+                        name="password"
+                        class="password"
+                        id="password"
+                  
+                        placeholder="User Password"
+                      />
+                      <button type="button" id="regUserBtn">SUBMIT</button>
+                    </form>
+                  </div>
+               <div class="table-content">
+                   <table>
+                       <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                       </thead>
+                       <tbody id="userDataView">
+                        <tr>
+                          <th>1</th>
+                          <th>Kinglsey</th>
+                          <th>Email</th>
+                          <th>Phone</th>
+                          <th><a href="">Edit</a> <a href="">Delete</a></th>
+                        </tr>
+                        
+                      </tbody>
+                       <!-- <tr>
+                        <td>Maria</td>
+                        <td>test2@gmail.co</td>
+                        <td>09021116543</td>
+                        <td>Edit | Delete</td>
+                    </tr>
+                    <tr>
+                        <td>Chuck</td>
+                        <td>test3@gmail.co</td>
+                        <td>09023459647</td>
+                        <td>Edit | Delete</td>
+                    </tr> -->
+                   </table>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/users.js"></script>
+</body>
+</html>

@@ -1,0 +1,804 @@
+@import url(nav.css);
+@import url(footer.css);
+
+
+* {
+    top: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.home-item {
+    border-bottom: .5px solid lightgray;
+}
+
+/*///////////////////////// INDEX PAGE //////////////////////*/
+/*      Slider      */
+#sliderContainer {
+    width: 100%;
+    margin: auto;
+    height: 680px;
+}
+
+.tint {
+    background-color: rgba(0, 0, 0, 0.735);
+    height: 680px;
+    width: 100%;
+    display: none;
+    transition-property: speed;
+    transition-duration: 10s;
+    transition:  5s;
+}
+
+.banner-text:hover+.tint {
+    display: block;
+
+}
+
+/* slider   1 */
+.banner-button {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    padding: 18px 18px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.banner-img1 {
+    background-image: url(../img/Bamboo-Web-Banner_1920x.jpg);
+    background-size: contain;
+}
+
+.banner-img1-text {
+    position: absolute;
+    color: white;
+    margin: 50px 900px 0px 130px;
+    gap: 100px;
+}
+
+.banner-img1-text h3 {
+    font-size: 60px;
+}
+
+.banner-img1-text small {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.banner-img1-text button small {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.img1 .banner-text {
+    color: white;
+}
+
+.img1 .banner-text h3 {
+    font-size: 40px;
+}
+
+
+
+/* slider 2 */
+.banner-img2 {
+    background-image: url(../img/Socks-Web-Banner-02_1920x.jpg);
+}
+
+.banner-img2-text {
+    position: absolute;
+    color: white;
+    margin: auto;
+    margin: 100px 400px 0px 450px;
+    text-align: center;
+    gap: 100px;
+}
+
+.banner-img2-text h3 {
+    font-size: 60px;
+    font-family: Montserrat, sans-serif;
+}
+
+.banner-img2-text small {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: -100px;
+}
+.banner2-btn:hover{
+    background-color: grey;
+}
+
+.banner-img2-text button small {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.img2 .banner-text {
+    color: white;
+}
+
+.img2 .banner-text h3 {
+    font-size: 40px;
+}
+
+/* slider 3 */
+
+.banner-img3 {
+    background-image: url(../img/Rumple-Banner_1920x.jpg);
+}
+
+.banner-img3-text {
+    position: absolute;
+    color: white;
+    margin: auto;
+    margin: 0px 450px 0px 350px;
+    text-align: center;
+    gap: 100px;
+}
+
+.banner-img3-text h3 {
+    font-size: 50px;
+}
+
+.banner-img3-text small {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.banner-img3-text button small {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.img3 .banner-text {
+    color: white;
+}
+
+.img3 .banner-text h3 {
+    font-size: 40px;
+}
+
+/* slider 4 */
+.banner-img4 {
+    background-image: url(../img/Combs-Mirrors-Web-Banner-2_86956b42-d48c-4ea4-b098-e5be5cb2a.jpg);
+}
+
+.banner-img4-text {
+    position: absolute;
+    color: white;
+    padding: 180px 800px 300px 110px;
+    text-align: left;
+    margin: auto;
+    gap: 100px;
+
+    transition: background-color 1s;
+}
+
+.banner-img4-text:hover {
+    background-color: rgba(0, 0, 0, 0.664);
+
+}
+
+.banner-img4-text h3 {
+    font-size: 55px;
+}
+
+.banner-img4-text small {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.banner-img4-text button small {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.img4 .banner-text {
+    color: white;
+}
+
+.img4 .banner-text h3 {
+    font-size: 40px;
+}
+
+
+.shop-cat {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    /* grid-template-columns: repeat(auto-fill,minmax(500px,1fr)); */
+}
+
+.shop-cat h3 {
+    font-size: 60px;
+    color: white;
+    transition: transform 1s;
+}
+
+.shop-cat .left {
+    background-image: url(../img/Fall-2021-Stationery-NL-02_1920x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1200px;
+    width: 50%;
+    padding: 550px 0px 0px 200px;
+}
+
+.shop-cat .right {
+    width: 50%;
+    text-align: center;
+}
+
+.shop-cat .right h3 {
+    height: 600px;
+    align-items: center;
+    padding-top: 35%;
+    transition: transform 1s;
+}
+
+.shop-cat h3:hover {
+    color: rgb(0, 183, 255);
+    transform: scale(1.2, 1.2);
+}
+
+.shop-cat .right .down h3 {
+    /* padding: 0px 35%; */
+    /* padding: 200px 200px 0px 200px; */
+    text-align: center;
+}
+
+.shop-cat .right .up {
+    background-image: url(../img/Flora-Salad-Plate-Flora-Towel-1x1_1920x_46f7dcf9-0933-4dc7-b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0%;
+    width: auto;
+}
+
+.shop-cat .right .down {
+    background-image: url(../img/Creative-Spaces-Lifestyle-4_1920x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+}
+
+.product-items {
+    background-color: rgb(249, 249, 249);
+    text-align: center;
+}
+
+.product-items h4 {
+    padding: 0px 20px;
+}
+
+.product-items img {
+    width: 210px;
+}
+
+.product-items {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 300px 300px;
+}
+
+.product-items .item1:hover {
+    background-image: url(../img/Bamboo-Dinner-Plate-Planes-02_480x.jpg);
+}
+
+.product-items .item2:hover {
+    background-image: url(../img/Rumpl-Poketo-Blanket-Color-Shapes1-01_480x.jpg.txt);
+}
+
+.product-items .item3:hover {
+    background-image: url(../img/Bamboo-Salad-Plate-Boulders-03_480x.jpg);
+}
+
+.product-items .item4:hover {
+    background-image: url(../img/Wave-Comb-Multi-01_480x.jpg);
+}
+
+.product-items .item1:hover {
+    background-image: url();
+}
+
+.product-items .item1:hover {
+    background-image: url();
+}
+
+.product-items .item1:hover {
+    background-image: url();
+}
+
+.product-items .item1:hover {
+    background-image: url();
+}
+
+.explore-cat {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    color: #fff;
+}
+
+.explore-cat .left {
+    width: 50%;
+    background-image: url(../img/poketo-blog_1200x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 270px 0px 0px 100px;
+    font-size: 35px;
+}
+
+.explore-cat .right {
+    width: 50%;
+    height: 700px;
+}
+
+.explore-cat .right .text {
+    height: 350px;
+}
+
+.explore-cat .right .text {
+    height: 350px;
+}
+
+.explore-cat .right .up {
+    background-image: url(../img/IMG_8330_960x1080_crop_center.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-position: right;
+}
+
+.explore-cat .right .up .text {
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 50px 70px 0px 50px;
+}
+
+.explore-cat .right .text p {
+    font-size: 13px;
+}
+
+.explore-cat .right .up .text small {
+    line-height: 2;
+}
+
+.explore-cat .right .text hr {
+    width: 40px;
+    color: white;
+}
+
+.explore-cat .right .down {
+    background-image: url(../img/blog_960x1080_crop_center.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-position: right;
+}
+
+.explore-cat .right .down .text {
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 50px 70px 0px 50px;
+}
+
+
+/* Stationary Page */
+.stat-banner {
+    background-image: url(../img/Stationery-Category-Banner_2400x.webp);
+    background-size: cover;
+    height: auto;
+}
+
+.stat-banner h3 {
+    height: 200px;
+    color: white;
+    font-size: 40px;
+    padding: 8vh 0vh 0vh 80vh;
+}
+
+.filter {
+    display: block;
+}
+
+.filter .content {
+    float: right;
+}
+
+.filter .content select {
+    height: 30px;
+    width: 150px;
+    margin-top: 5px;
+}
+
+.product-items-2 {
+    background-color: rgb(249, 249, 249);
+    text-align: center;
+}
+
+.product-items-2 h4 {
+    padding: 0px 20px;
+}
+
+.product-items-2 img {
+    width: 210px;
+    height: 210px;
+}
+
+.product-items-2 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 300px 300px;
+}
+
+.product-items-2 .item{
+    position: relative;
+}
+.product-btn{
+    /* display: none; */
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.304);
+    border: .1px solid gray;
+    font-size: 14px;
+    height: 25px;
+    top: 36%;
+    right: 35%;
+}
+
+.item:hover  + .product-btn{
+    color: blue;
+    display: block;
+    background-color: wheat;
+    background-color: rgba(211, 211, 211, 0.800);
+
+}
+/* .product-btn:hover{
+
+} */
+/* //////////// Product Page ///////// */
+
+.product-view {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(249, 249, 249);
+    font-size: 10px;
+}
+
+.product-view .left {
+    width: 49%;
+    overflow: hidden;
+}
+
+.product-view .left img {
+    height: 770px;
+
+}
+
+.product-view .mid-sep {
+    border: .1px solid black;
+    height: 700px;
+    margin-top: 40px;
+}
+
+.product-view .right {
+    text-align: left;
+    width: 50%;
+    height: 1000px;
+    padding: 100px 80px 100px 200px;
+}
+
+.product-view .right h4 {
+    font-size: 20px;
+    color: rgb(90, 90, 90);
+}
+
+.product-view .right a {
+    color: grey;
+}
+
+.product-view .right a:hover {
+    color: rgb(0, 153, 255);
+}
+
+.product-note {
+    color: red;
+    font-weight: 600;
+}
+
+.product-view .right small {
+    line-height: 2;
+    font-size: 10px;
+}
+
+.product-view .right small span {
+    color: black;
+    font-weight: 600;
+}
+
+.product-view .right li {
+    line-height: 2;
+}
+
+.product-view .right input {
+    color: white;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-color: lightgray;
+    margin-right: 5px;
+}
+
+.product-view .right .pro-btn-1 {
+    font-size: 600;
+    color: white;
+    height: 42px;
+    background-color: rgb(80, 80, 80);
+    border: none;
+    margin-right: 5px;
+}
+
+.product-view .right .pro-btn-1:hover {
+    background-color: rgb(0, 114, 189);
+}
+
+.product-view .right .pro-btn-2 {
+    font-size: 600;
+    color: white;
+    height: 40px;
+    border: none;
+    background-color: lightgray;
+}
+
+.product-view .right .pro-btn-2:hover {
+    background-color: rgb(0, 114, 189);
+}
+
+/* ////////// login ///////// */
+
+.home {
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+
+.home .left {
+    width: 50%;
+    text-align: center;
+    padding-top: 250px;
+    background-color: rgb(249, 249, 249);
+}
+
+.home .left h3 {
+    padding: 0px 500px 0px 180px;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(97, 97, 97);
+    /* border-right: 1px solid grey; */
+}
+.home .left hr{
+    color:black;
+}
+.home .left div {
+    margin-top: 30px;
+    background-color: gray;
+    border: 2px solid grey;
+    width: 50px;
+    height: 2px;
+    margin-left: 180px;
+}
+
+.info-hold {
+    display: flex;
+    padding-top: 3px;
+    color: gray;
+}
+
+.login-btn {
+    padding: 5px;
+
+}
+
+.login-btn button {
+    padding: 8px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+.login-btn button:hover {
+    background-color: rgb(0, 114, 189);
+}
+
+.home .right {
+    width: 50%;
+    text-align: left;
+    padding-top: 220px;
+    padding-left: 100px;
+    background-color: rgb(249, 249, 249);
+}
+
+.home .right input {
+    border: none;
+    height: 60px;
+    width: 500px;
+    background-color: rgb(209, 209, 209);
+    margin-bottom: 10px;
+}
+/* .home .right input :active{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+} */
+
+.home .right small {
+    font-size: 15px;
+}
+/* .home .right .info-hold small{
+    margin-top: 30px;
+    padding-top: 10px;
+} */
+.home .right button {
+    padding: 15px;
+    border: none;
+}
+.home .right input .placeholder {
+    color: rgb(46, 46, 46);
+    font-size: 40px;
+}
+.right .name{
+    display: flex;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/*  Sign - Up */
+/* padding: 0px 500px 0px 180px;
+font-size: 45px;
+font-weight: 600;
+color: rgb(97, 97, 97); */
+
+
+/* Cart Page */
+.cart-home{
+    height: 1000px;
+}
+.cart-right {
+    height: 1000px;
+    width: 50%;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 100px;
+    border-left: .5px solid lightgray;
+    background-color: rgb(249, 249, 249);
+    color: rgb(102, 102, 102);
+}
+
+.cart-right input {
+    border: none;
+    /* height: 50px; */
+    /* width: 300px; */
+    background-color: rgb(231, 231, 231);
+}
+
+.cart-right small {
+    font-size: 10px;
+}
+
+.cart-right input .placeholder {
+    color: rgb(46, 46, 46);
+}
+
+.cart-product{
+    display: flex;
+    margin-bottom: 30px;
+}
+.cart-product .product-img{
+    border-bottom: .5px dotted grey;
+    padding: 40px 0px 0px 0px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.cart-product .product-desc h4{
+    border-bottom: .5px dotted black;
+}
+.cart-product .product-desc{
+    padding-top: 50px;
+    line-height: 2;
+}
+.product-desc small{
+    display: block;
+}
+.cart-product input{
+    height: 50px;
+    width: 80px;
+    margin-top: 90px;
+    padding: 0px 10px 0px 20px;
+    margin-right: 80px;
+}
+
+.up-cart-btn button{
+    background-color: white;
+    color: gray;
+    width: 140px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    align-items: center;
+    border: 2px solid gray;
+    margin-bottom: 50px;
+}
+.up-cart-btn button:hover{
+    color:white;
+    background-color: rgb(0, 102, 255);
+    border: none;
+    height:50px;
+    width: 140px;
+}
+
+.spec-inst{
+    margin-top: 10px;
+    padding: 20px 280px 80px 20px;
+}
+.cart-h2{
+    font-size: 26px;
+    font-weight:600;
+}
+.buttom-info .pay-plan{
+    font-weight: 600;
+}
+.buttom-info span{
+    font-size: 10px;
+}
+.buttom-info button{
+    display: block;
+    margin: 20px 0px 0px 0px;
+    padding: 18px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(83, 83, 83);
+    border: none;
+}
+.buttom-info button:hover{
+    background-color: rgb(50, 129, 194);
+}
+.cart-wrap{
+    display: flex;
+}
+.cart-wrap input{
+    margin-top: 3px;
+    padding: 5px;
+}
+.cart-wrap p{
+    padding: 0px 100px 0px 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cart-wrap-p2 p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.cart-wrap-p2 input{
+    margin-top: 3px;
+    height: 135px;
+    width: 450px;
+}
+
+

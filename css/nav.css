@@ -1,0 +1,87 @@
+.nav-svg {
+    filter: invert(43%) sepia(0%) saturate(1%) hue-rotate(175deg) brightness(98%) contrast(88%);
+    height: 30px;
+}
+
+.ship-campaign {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* margin-bottom: 10px; */
+    color: white;
+    background-color: rgb(255, 109, 109);
+    height: 33px;
+}
+
+.mega-menu {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 190px;
+    margin: 0px 110px 0px 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 20px; */
+}
+
+.nav-links li {
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(143, 143, 143);
+}
+
+.nav-links li:hover {
+    color: rgb(81, 145, 197);
+}
+
+.nav-stickers {
+    margin-right: 100px;
+}
+
+.cam-x {
+    position: absolute;
+    margin: 10px 250px;
+}
+.hee{
+    position: relative;
+}
+.hee a{
+    color: rgb(143, 143, 143);
+    text-decoration: none;
+}
+.hee a:hover{
+    /* display: inline-block; */
+    color: rgb(81, 145, 197);
+}
+.sub-stationary{
+    width: 1em;
+    position: relative; 
+    border: 5px solid green;
+    
+    /* text-decoration: none; */
+}
+.sub-stationary ul{
+    position: absolute;
+    display: flex;
+    margin-left: -250px;
+    margin-top: 50px;
+}
+.sub-stationary ul li{
+    list-style: none;
+    background-color: white;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 40px;
+}
+    
