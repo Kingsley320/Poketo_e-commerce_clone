@@ -119,7 +119,7 @@ function loadStadentsData() {
       let sliderData=""
       for (let index = 0; index < products.length; index++) {
 
-          if(products[index]['category']== "young_section2" || products[index]['category']== "balm_shop_prod" || products[index]["description"]==["Nissan Gtr"]){
+          if(products[index]['category']== "walmart" || products[index]['category']== "balm_shop_prod" || products[index]["description"]==["Nissan Gtr"]){
             rows += ` 
             <div class="cards">
             <div class="cards_h1">

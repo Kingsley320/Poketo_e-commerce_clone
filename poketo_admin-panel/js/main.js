@@ -144,7 +144,7 @@ function loadStadentsData() {
       console.log(products);
       for (let index = 0; index < products.length; index++) {
 
-          if(products[index]['category']== "seyi_section2" || products[index]['category']== "seyi_slider" ){
+          if(products[index]['category']== "walmart" || products[index]['category']== "seyi_slider" ){
             rows += `
             <div class="col1">
             <div class="cards_h1">
@@ -158,11 +158,11 @@ function loadStadentsData() {
             </div>`;
           }
 
-          if(products[index]['category']== "seyi_slider"){
-            sliderData+=`
+          // if(products[index]['category']== "seyi_slider"){
+          //   sliderData+=`
             
-            `
-          }
+          //   `
+          // }
        
       }
 
